@@ -1,0 +1,61 @@
+{
+  "notifications": [
+    {
+      "title": "<span>Mark Webber</span> reacted to your recent post <span class='react'>My first tournament today!</span>",
+      "icon": "/images/avatar-mark-webber.webp",
+      "type": "react",
+      "read": false,
+      "time": "1m ago",
+      "id": 1
+    },
+    {
+      "title": "<span>Angela Gray</span> followed you",
+      "icon": "/images/avatar-angela-gray.webp",
+      "type": "follow",
+      "read": false,
+      "time": "5m ago",
+      "id": 2
+    },
+    {
+      "title": "<span>Jacob Thopson</span> has joined your group <span class='group'>Chess Club</span>",
+      "icon": "/images/avatar-jacob-thompson.webp",
+      "type": "group",
+      "read": false,
+      "time": "1day ago",
+      "id": 3
+    },
+    {
+      "title": "<span>Rizky Hasanuddin</span> sent you a private message",
+      "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and i'm already having lots of fun and improving my game.",
+      "icon": "/images/avatar-rizky-hasanuddin.webp",
+      "type": "message",
+      "read": true,
+      "time": "5days ago",
+      "id": 5
+    },
+    {
+      "title": "<span>Kimberly Smith</span> commented on your picture",
+      "icon": "/images/avatar-kimberly-smith.webp",
+      "type": "comment",
+      "read": true,
+      "time": "1week ago",
+      "id": 6
+    },
+    {
+      "title": "<span>Nathan Peterson</span> reacted to your recent post <span class='react'>5 end-game strategies to increase win rate</span>",
+      "icon": "/images/avatar-nathan-peterson.webp",
+      "type": "react",
+      "read": true,
+      "time": "2weeks ago",
+      "id": 7
+    },
+    {
+      "title": "<span>Anna Kim</span> left the group <span class='group'>Chess Club</span>`",
+      "icon": "/images/avatar-anna-kim.webp",
+      "type": "group",
+      "read": true,
+      "time": "1week ago",
+      "id": 8
+    }
+  ]
+}
