@@ -1,6 +1,6 @@
-## A simple in-app web notification simulation
+# A simple in-app web notification simulation
 
-# Will later implement adding notification manually with form
+## Will later implement adding notification manually with form
 
 This template should help get you started developing with Vue 3 in Vite.
 
