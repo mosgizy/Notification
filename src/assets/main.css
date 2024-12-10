@@ -7,6 +7,6 @@
     @apply text-secondary-500
   }
   .react{
-    @apply text-secondary-200
+    @apply text-secondary-200 hover:text-secondary-500
   }
 }

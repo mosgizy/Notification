@@ -63,18 +63,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="bg-primary-300 min-h-screen pb-10">
+  <main class="bg-primary-300 min-h-screen pb-10 px-4">
     <Nav :toggleNotification="toggleNotification" />
 
     <section
       v-if="isNotification"
-      class="bg-white px-8 py-10 max-w-[60%] mx-auto rounded-2xl mt-6"
+      class="bg-white px-4 lg:px-8 py-10 lg:max-w-[60%] mx-auto rounded-2xl mt-6"
     >
       <div class="flex items-center justify-between">
         <div class="flex gap-2 items-center text-lg text-secondary-500 font-bold"><span>Notifications</span> <span class="bg-secondary-500 px-[10px] py-[1.5px] rounded text-white text-xs">{{ numberofUnread }}</span></div>
         <div
           @click="markAllAsread"
-          class="text-sm cursor-pointer"
+          class="text-sm cursor-pointer font-bold text-secondary-200 hover:text-secondary-500"
         >Mark all as read</div>
       </div>
       <section>
@@ -83,7 +83,7 @@ onMounted(() => {
             v-for="notification in notificationRef"
             :key="notification.id"
             :class="notification.read ? '' : 'bg-primary-100' "
-            class="px-6 py-4 rounded-md flex gap-5 text-secondary-200"
+            class="px-4 lg:px-6 py-4 rounded-md flex gap-5 text-secondary-200"
           >
             <div class="w-14 h-14 rounded-full">
               <img
@@ -95,7 +95,7 @@ onMounted(() => {
               <div class="flex items-center gap-2">
                 <div
                   v-html="notification.title"
-                  class="[&_span]:font-bold [&_span]:text-secondary-300 [&_.react]:text-secondary-200"
+                  class="[&_span]:font-bold [&_span]:text-secondary-300 [&_span:hover]:text-secondary-500 [&_span]:cursor-pointer [&_.react]:text-secondary-200"
                 >
                 </div>
                 <span
@@ -106,7 +106,7 @@ onMounted(() => {
               <div>{{notification.time}}</div>
               <div
                 v-if="notification.message"
-                class="border border-secondary-100 rounded-md px-5 py-3 mt-3 text-secondary-100 font-bold"
+                class="border border-secondary-100 hover:border-primary-300 hover:bg-primary-300 rounded-md px-5 py-3 mt-3 text-secondary-100 hover:text-secondary-200 font-bold cursor-pointer"
               >
                 {{ notification.message }}
               </div>
